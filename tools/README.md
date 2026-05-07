@@ -1,7 +1,12 @@
-# Custom Forensics Tool
-**Project:** Memory and Volatile Data Forensics
+# Memory and Volatile Data Forensics
+
 **Author:** Nhat Nguyen
-**Purpose:** Custom tools developed to support real-time attack detection, credential theft, and fileless malware analysis.
+
+## Purpose
+Custom tools developed to support:
+- Real-time attack detection
+- Credential theft analysis
+- Fileless malware analysis
 
 ## Dependencies
 All included dependencies can be installed using `requirements.txt` using the command:
