@@ -1,0 +1,21 @@
+# --- Core: Volatility 3 ---
+volatility3>=2.5.0
+
+# --- Core dependency (required) ---
+# PE file parsing - needed by many Windows plugins (verinfo, dlllist, etc.)
+pefile>=2017.8.1
+
+# YARA scanning support (yarascan, vadyarascan plugins)
+yara-python>=3.8.0
+
+# Disassembly support
+capstone>=3.0.5
+
+# Cryptographic operations (hashdump, cachedump, etc.)
+pycryptodome>=3.0.0
+
+# Image/screenshot support
+Pillow>=9.0.0
+
+# AVML / compressed memory dump support (.lime.gz, snappy-compressed)
+python-snappy>=0.7.0
