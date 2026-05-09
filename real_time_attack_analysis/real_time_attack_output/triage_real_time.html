@@ -1,0 +1,474 @@
+<html><body><h1>Memory Triage Report - 09-05-2026 15:31:15 AEST</h1>
+<h2>System Information</h2><pre>Volatility 3 Framework 2.28.1
+
+Variable	Value
+
+Kernel Base	0xf80172210000
+DTB	0x1ad000
+Symbols	file:///home/kali/HD/volatility3/volatility3/symbols/windows/ntkrnlmp.pdb/D9424FC4861E47C10FAD1B35DEC6DCC8-1.json.xz
+Is64Bit	True
+IsPAE	False
+layer_name	0 WindowsIntel32e
+memory_layer	1 FileLayer
+KdVersionBlock	0xf80172e1f400
+Major/Minor	15.19041
+MachineType	34404
+KeNumberProcessors	2
+SystemTime	2026-05-09 04:51:22+00:00
+NtSystemRoot	C:\Windows
+NtProductType	NtProductWinNt
+NtMajorVersion	10
+NtMinorVersion	0
+PE MajorOperatingSystemVersion	10
+PE MinorOperatingSystemVersion	0
+PE Machine	34404
+PE TimeDateStamp	Mon Dec  9 11:07:51 2019</pre>
+<h2>Running Processes</h2><pre>Volatility 3 Framework 2.28.1
+
+PID	PPID	ImageFileName	Offset(V)	Threads	Handles	SessionId	Wow64	CreateTime	ExitTime	File output
+
+4	0	System	0xc80ee1e7d040	130	-	N/A	False	2026-05-09 03:47:43.000000 UTC	N/A	Disabled
+92	4	Registry	0xc80ee1edb080	4	-	N/A	False	2026-05-09 03:47:37.000000 UTC	N/A	Disabled
+308	4	smss.exe	0xc80ee2a60040	2	-	N/A	False	2026-05-09 03:47:43.000000 UTC	N/A	Disabled
+412	404	csrss.exe	0xc80ee503a140	10	-	0	False	2026-05-09 03:47:44.000000 UTC	N/A	Disabled
+528	404	wininit.exe	0xc80ee5de9080	1	-	0	False	2026-05-09 03:47:44.000000 UTC	N/A	Disabled
+536	520	csrss.exe	0xc80ee5dee140	11	-	1	False	2026-05-09 03:47:44.000000 UTC	N/A	Disabled
+596	520	winlogon.exe	0xc80ee5a4a080	5	-	1	False	2026-05-09 03:47:45.000000 UTC	N/A	Disabled
+668	528	services.exe	0xc80ee5a67080	5	-	0	False	2026-05-09 03:47:45.000000 UTC	N/A	Disabled
+688	528	lsass.exe	0xc80ee5a64080	8	-	0	False	2026-05-09 03:47:45.000000 UTC	N/A	Disabled
+812	668	svchost.exe	0xc80ee6465240	13	-	0	False	2026-05-09 03:47:45.000000 UTC	N/A	Disabled
+836	528	fontdrvhost.ex	0xc80ee6496140	5	-	0	False	2026-05-09 03:47:45.000000 UTC	N/A	Disabled
+840	596	fontdrvhost.ex	0xc80ee64a6140	5	-	1	False	2026-05-09 03:47:45.000000 UTC	N/A	Disabled
+904	668	WUDFHost.exe	0xc80ee64a5080	6	-	0	False	2026-05-09 03:47:45.000000 UTC	N/A	Disabled
+968	668	svchost.exe	0xc80ee64e5080	9	-	0	False	2026-05-09 03:47:45.000000 UTC	N/A	Disabled
+404	596	dwm.exe	0xc80ee6696080	15	-	1	False	2026-05-09 03:47:45.000000 UTC	N/A	Disabled
+832	668	svchost.exe	0xc80ee672b240	46	-	0	False	2026-05-09 03:47:45.000000 UTC	N/A	Disabled
+1044	668	svchost.exe	0xc80ee67542c0	11	-	0	False	2026-05-09 03:47:45.000000 UTC	N/A	Disabled
+1092	668	svchost.exe	0xc80ee67610c0	33	-	0	False	2026-05-09 03:47:45.000000 UTC	N/A	Disabled
+1136	668	svchost.exe	0xc80ee679e2c0	14	-	0	False	2026-05-09 03:47:45.000000 UTC	N/A	Disabled
+1208	668	svchost.exe	0xc80ee67d42c0	19	-	0	False	2026-05-09 03:47:46.000000 UTC	N/A	Disabled
+1340	668	svchost.exe	0xc80ee65482c0	12	-	0	False	2026-05-09 03:47:46.000000 UTC	N/A	Disabled
+1376	668	svchost.exe	0xc80ee6564240	4	-	0	False	2026-05-09 03:47:46.000000 UTC	N/A	Disabled
+1412	668	svchost.exe	0xc80ee65802c0	16	-	0	False	2026-05-09 03:47:46.000000 UTC	N/A	Disabled
+1740	4	MemCompression	0xc80ee1f03040	78	-	N/A	False	2026-05-09 03:47:46.000000 UTC	N/A	Disabled
+1756	668	svchost.exe	0xc80ee688b2c0	2	-	0	False	2026-05-09 03:47:46.000000 UTC	N/A	Disabled
+1956	668	svchost.exe	0xc80ee1f95080	9	-	0	False	2026-05-09 03:47:46.000000 UTC	N/A	Disabled
+1268	668	svchost.exe	0xc80ee1f55080	3	-	0	False	2026-05-09 03:47:46.000000 UTC	N/A	Disabled
+1684	668	svchost.exe	0xc80ee5a38080	4	-	0	False	2026-05-09 03:47:46.000000 UTC	N/A	Disabled
+2160	668	spoolsv.exe	0xc80ee699e0c0	7	-	0	False	2026-05-09 03:47:47.000000 UTC	N/A	Disabled
+2184	668	svchost.exe	0xc80ee69a20c0	12	-	0	False	2026-05-09 03:47:47.000000 UTC	N/A	Disabled
+2424	668	svchost.exe	0xc80ee6ab5240	8	-	0	False	2026-05-09 03:47:47.000000 UTC	N/A	Disabled
+2500	668	VGAuthService.	0xc80ee6af1300	2	-	0	False	2026-05-09 03:47:47.000000 UTC	N/A	Disabled
+2508	668	vm3dservice.ex	0xc80ee6af2080	3	-	0	False	2026-05-09 03:47:47.000000 UTC	N/A	Disabled
+2540	668	vmtoolsd.exe	0xc80ee6c71280	11	-	0	False	2026-05-09 03:47:47.000000 UTC	N/A	Disabled
+2660	2508	vm3dservice.ex	0xc80ee6cc3300	4	-	1	False	2026-05-09 03:47:47.000000 UTC	N/A	Disabled
+800	668	dllhost.exe	0xc80ee6be0280	10	-	0	False	2026-05-09 03:47:49.000000 UTC	N/A	Disabled
+3188	812	WmiPrvSE.exe	0xc80ee6ea9280	13	-	0	False	2026-05-09 03:47:50.000000 UTC	N/A	Disabled
+3244	668	svchost.exe	0xc80ee6ea4080	5	-	0	False	2026-05-09 03:47:50.000000 UTC	N/A	Disabled
+3348	668	SearchIndexer.	0xc80ee6f5d240	16	-	0	False	2026-05-09 03:47:51.000000 UTC	N/A	Disabled
+572	668	msdtc.exe	0xc80ee708e280	9	-	0	False	2026-05-09 03:47:53.000000 UTC	N/A	Disabled
+2432	832	sihost.exe	0xc80ee72a7300	12	-	1	False	2026-05-09 03:47:54.000000 UTC	N/A	Disabled
+3492	668	svchost.exe	0xc80ee72932c0	18	-	1	False	2026-05-09 03:47:54.000000 UTC	N/A	Disabled
+3772	832	taskhostw.exe	0xc80ee7304300	8	-	1	False	2026-05-09 03:47:54.000000 UTC	N/A	Disabled
+3796	832	MicrosoftEdgeU	0xc80ee7306300	4	-	0	True	2026-05-09 03:47:54.000000 UTC	N/A	Disabled
+4248	596	userinit.exe	0xc80ee7148080	0	-	1	False	2026-05-09 03:47:55.000000 UTC	2026-05-09 03:48:20.000000 UTC	Disabled
+4300	4248	explorer.exe	0xc80ee7192340	67	-	1	False	2026-05-09 03:47:55.000000 UTC	N/A	Disabled
+4500	668	svchost.exe	0xc80ee74912c0	7	-	1	False	2026-05-09 03:47:56.000000 UTC	N/A	Disabled
+4776	668	svchost.exe	0xc80ee6520080	8	-	0	False	2026-05-09 03:47:57.000000 UTC	N/A	Disabled
+5052	812	StartMenuExper	0xc80ee76890c0	11	-	1	False	2026-05-09 03:47:57.000000 UTC	N/A	Disabled
+4552	812	RuntimeBroker.	0xc80ee77d52c0	1	-	1	False	2026-05-09 03:47:58.000000 UTC	N/A	Disabled
+5248	812	SearchApp.exe	0xc80ee785b080	47	-	1	False	2026-05-09 03:47:58.000000 UTC	N/A	Disabled
+5344	812	RuntimeBroker.	0xc80ee7860080	9	-	1	False	2026-05-09 03:47:58.000000 UTC	N/A	Disabled
+5916	812	SkypeApp.exe	0xc80ee7c77340	15	-	1	False	2026-05-09 03:48:01.000000 UTC	N/A	Disabled
+5940	812	SkypeBackgroun	0xc80ee7c8b240	4	-	1	False	2026-05-09 03:48:01.000000 UTC	N/A	Disabled
+5972	1092	ctfmon.exe	0xc80ee7d6c0c0	11	-	1	False	2026-05-09 03:48:01.000000 UTC	N/A	Disabled
+5992	1092	TabTip.exe	0xc80ee7d7e080	9	-	1	False	2026-05-09 03:48:01.000000 UTC	N/A	Disabled
+6124	812	RuntimeBroker.	0xc80ee65240c0	4	-	1	False	2026-05-09 03:48:02.000000 UTC	N/A	Disabled
+5652	812	TextInputHost.	0xc80ee7da1080	10	-	1	False	2026-05-09 03:48:03.000000 UTC	N/A	Disabled
+7020	668	svchost.exe	0xc80ee79b3080	1	-	0	False	2026-05-09 03:48:11.000000 UTC	N/A	Disabled
+7144	812	RuntimeBroker.	0xc80ee7f33080	4	-	1	False	2026-05-09 03:48:11.000000 UTC	N/A	Disabled
+2292	4300	vmtoolsd.exe	0xc80ee7a54080	5	-	1	False	2026-05-09 03:48:12.000000 UTC	N/A	Disabled
+6452	668	SgrmBroker.exe	0xc80ee800d080	7	-	0	False	2026-05-09 03:49:48.000000 UTC	N/A	Disabled
+992	668	svchost.exe	0xc80ee7788080	8	-	0	False	2026-05-09 03:49:48.000000 UTC	N/A	Disabled
+3872	668	SecurityHealth	0xc80ee8043080	6	-	0	False	2026-05-09 03:50:01.000000 UTC	N/A	Disabled
+2916	812	ApplicationFra	0xc80ee7305080	2	-	1	False	2026-05-09 03:50:25.000000 UTC	N/A	Disabled
+6572	812	WinStore.App.e	0xc80ee69350c0	12	-	1	False	2026-05-09 03:50:25.000000 UTC	N/A	Disabled
+2136	812	RuntimeBroker.	0xc80ee72d2080	1	-	1	False	2026-05-09 03:50:26.000000 UTC	N/A	Disabled
+5152	668	svchost.exe	0xc80ee79c4080	4	-	0	False	2026-05-09 03:50:47.000000 UTC	N/A	Disabled
+2180	812	dllhost.exe	0xc80ee6ea5080	8	-	1	False	2026-05-09 03:51:42.000000 UTC	N/A	Disabled
+3896	4300	cmd.exe	0xc80ee7cf0080	1	-	1	False	2026-05-09 03:51:43.000000 UTC	N/A	Disabled
+4356	3896	conhost.exe	0xc80ee7352080	4	-	1	False	2026-05-09 03:51:43.000000 UTC	N/A	Disabled
+5708	668	svchost.exe	0xc80ee796b0c0	3	-	1	False	2026-05-09 03:52:55.000000 UTC	N/A	Disabled
+1984	812	ScreenClipping	0xc80ee7c76080	0	-	1	False	2026-05-09 03:52:59.000000 UTC	2026-05-09 03:53:11.000000 UTC	Disabled
+2940	812	ShellExperienc	0xc80ee6eaa080	18	-	1	False	2026-05-09 03:53:11.000000 UTC	N/A	Disabled
+4480	812	RuntimeBroker.	0xc80ee7d9e0c0	6	-	1	False	2026-05-09 03:53:11.000000 UTC	N/A	Disabled
+2200	812	ScreenClipping	0xc80ee70a7080	0	-	1	False	2026-05-09 03:53:12.000000 UTC	2026-05-09 03:53:27.000000 UTC	Disabled
+6756	812	ScreenClipping	0xc80ee7db8340	0	-	1	False	2026-05-09 03:53:39.000000 UTC	2026-05-09 03:53:49.000000 UTC	Disabled
+1356	812	ScreenClipping	0xc80ee796d080	0	-	1	False	2026-05-09 03:54:16.000000 UTC	2026-05-09 03:54:27.000000 UTC	Disabled
+7080	812	ScreenClipping	0xc80ee778b080	0	-	1	False	2026-05-09 03:54:49.000000 UTC	2026-05-09 03:54:56.000000 UTC	Disabled
+7164	812	ScreenClipping	0xc80ee6e93080	0	-	1	False	2026-05-09 03:55:10.000000 UTC	2026-05-09 03:55:22.000000 UTC	Disabled
+4280	3148	OneDrive.Sync.	0xc80ee7490080	17	-	1	False	2026-05-09 03:55:52.000000 UTC	N/A	Disabled
+4040	4300	FTK Imager.exe	0xc80ee72b62c0	21	-	1	True	2026-05-09 03:55:52.000000 UTC	N/A	Disabled
+5860	668	MsMpEng.exe	0xc80ee79cd080	27	-	0	False	2026-05-09 03:58:23.000000 UTC	N/A	Disabled
+5028	668	MpDefenderCore	0xc80ee6bca080	10	-	0	False	2026-05-09 03:58:31.000000 UTC	N/A	Disabled
+3948	668	NisSrv.exe	0xc80ee75e0300	3	-	0	False	2026-05-09 03:58:31.000000 UTC	N/A	Disabled
+3004	812	dllhost.exe	0xc80ee7793080	4	-	0	False	2026-05-09 03:58:31.000000 UTC	N/A	Disabled
+5316	668	WUDFHost.exe	0xc80ee7694080	6	-	0	False	2026-05-09 03:59:58.000000 UTC	N/A	Disabled
+6280	812	ScreenClipping	0xc80ee7149080	0	-	1	False	2026-05-09 04:02:51.000000 UTC	2026-05-09 04:02:53.000000 UTC	Disabled
+4400	812	ScreenClipping	0xc80ee77d4280	0	-	1	False	2026-05-09 04:03:01.000000 UTC	2026-05-09 04:03:08.000000 UTC	Disabled
+6112	4300	cmd.exe	0xc80ee7ce2080	3	-	1	False	2026-05-09 04:06:42.000000 UTC	N/A	Disabled
+3484	6112	conhost.exe	0xc80ee7659080	3	-	1	False	2026-05-09 04:06:42.000000 UTC	N/A	Disabled
+4024	812	ScreenClipping	0xc80ee7f68340	0	-	1	False	2026-05-09 04:07:41.000000 UTC	2026-05-09 04:07:51.000000 UTC	Disabled
+4216	812	ScreenClipping	0xc80ee656e080	0	-	1	False	2026-05-09 04:07:55.000000 UTC	2026-05-09 04:08:04.000000 UTC	Disabled
+1108	812	ScreenClipping	0xc80ee821a080	0	-	1	False	2026-05-09 04:11:20.000000 UTC	2026-05-09 04:11:29.000000 UTC	Disabled
+3724	1092	TabTip.exe	0xc80ee74b32c0	0	-	1	False	2026-05-09 04:45:38.000000 UTC	2026-05-09 04:45:39.000000 UTC	Disabled
+3376	6124	powershell.exe	0xc80ee65e0080	12	-	1	False	2026-05-09 04:45:38.000000 UTC	N/A	Disabled
+4292	3376	conhost.exe	0xc80ee7151080	5	-	1	False	2026-05-09 04:45:39.000000 UTC	N/A	Disabled
+6308	3376	cmd.exe	0xc80ee8074080	0	-	1	False	2026-05-09 04:47:27.000000 UTC	2026-05-09 04:47:43.000000 UTC	Disabled
+1100	3376	powershell.exe	0xc80ee7fd9340	8	-	1	False	2026-05-09 04:47:27.000000 UTC	N/A	Disabled
+3392	3376	powershell.exe	0xc80ee71cb2c0	8	-	1	False	2026-05-09 04:47:27.000000 UTC	N/A	Disabled
+1220	3392	conhost.exe	0xc80ee7ce42c0	3	-	1	False	2026-05-09 04:47:27.000000 UTC	N/A	Disabled
+2144	3376	powershell.exe	0xc80ee71942c0	8	-	1	False	2026-05-09 04:47:27.000000 UTC	N/A	Disabled
+1920	2144	conhost.exe	0xc80ee7a4a2c0	3	-	1	False	2026-05-09 04:47:27.000000 UTC	N/A	Disabled
+3036	1100	conhost.exe	0xc80ee7863080	4	-	1	False	2026-05-09 04:47:27.000000 UTC	N/A	Disabled
+5896	3376	powershell.exe	0xc80ee7c67080	8	-	1	False	2026-05-09 04:47:27.000000 UTC	N/A	Disabled
+60	5896	conhost.exe	0xc80ee7978240	3	-	1	False	2026-05-09 04:47:27.000000 UTC	N/A	Disabled
+5512	3376	powershell.exe	0xc80ee8210240	8	-	1	False	2026-05-09 04:47:27.000000 UTC	N/A	Disabled
+7016	5512	conhost.exe	0xc80ee794e240	3	-	1	False	2026-05-09 04:47:27.000000 UTC	N/A	Disabled
+4324	3376	cmd.exe	0xc80ee8031080	1	-	1	False	2026-05-09 04:49:19.000000 UTC	N/A	Disabled
+3212	3376	powershell.exe	0xc80ee77a4080	8	-	1	False	2026-05-09 04:49:19.000000 UTC	N/A	Disabled
+2804	3376	powershell.exe	0xc80ee6fb3340	8	-	1	False	2026-05-09 04:49:19.000000 UTC	N/A	Disabled
+1016	4324	conhost.exe	0xc80ee75e3300	3	-	1	False	2026-05-09 04:49:19.000000 UTC	N/A	Disabled
+5872	2804	conhost.exe	0xc80ee9b350c0	3	-	1	False	2026-05-09 04:49:19.000000 UTC	N/A	Disabled
+6712	3376	powershell.exe	0xc80ee6810080	9	-	1	False	2026-05-09 04:49:19.000000 UTC	N/A	Disabled
+6508	6712	conhost.exe	0xc80ee70a6080	3	-	1	False	2026-05-09 04:49:19.000000 UTC	N/A	Disabled
+4012	3212	conhost.exe	0xc80ee793e080	4	-	1	False	2026-05-09 04:49:19.000000 UTC	N/A	Disabled
+3620	3376	powershell.exe	0xc80ee763e080	9	-	1	False	2026-05-09 04:49:19.000000 UTC	N/A	Disabled
+1680	3620	conhost.exe	0xc80ee7be2080	3	-	1	False	2026-05-09 04:49:19.000000 UTC	N/A	Disabled
+4440	3376	powershell.exe	0xc80ee7bd2080	11	-	1	False	2026-05-09 04:49:19.000000 UTC	N/A	Disabled
+6488	4440	conhost.exe	0xc80ee763a080	3	-	1	False	2026-05-09 04:49:19.000000 UTC	N/A	Disabled
+6368	4324	PING.EXE	0xc80ee803b340	3	-	1	False	2026-05-09 04:49:20.000000 UTC	N/A	Disabled</pre>
+<h2>Hidden/Active Processes</h2><pre>Volatility 3 Framework 2.28.1
+
+PID	PPID	ImageFileName	Offset(V)	Threads	Handles	SessionId	Wow64	CreateTime	ExitTime	File output
+
+3948	668	NisSrv.exe	0xaf894aa3f300	3	-	0	False	2026-05-09 03:58:31.000000 UTC	N/A	Disabled
+4	0	System	0xc80ee1e7d040	130	-	N/A	False	2026-05-09 03:47:43.000000 UTC	N/A	Disabled
+92	4	Registry	0xc80ee1edb080	4	-	N/A	False	2026-05-09 03:47:37.000000 UTC	N/A	Disabled
+1740	4	MemCompression	0xc80ee1f03040	78	-	N/A	False	2026-05-09 03:47:46.000000 UTC	N/A	Disabled
+1268	668	svchost.exe	0xc80ee1f55080	3	-	0	False	2026-05-09 03:47:46.000000 UTC	N/A	Disabled
+1956	668	svchost.exe	0xc80ee1f95080	9	-	0	False	2026-05-09 03:47:46.000000 UTC	N/A	Disabled
+308	4	smss.exe	0xc80ee2a60040	2	-	N/A	False	2026-05-09 03:47:43.000000 UTC	N/A	Disabled
+412	404	csrss.exe	0xc80ee503a140	10	-	0	False	2026-05-09 03:47:44.000000 UTC	N/A	Disabled
+1684	668	svchost.exe	0xc80ee5a38080	4	-	0	False	2026-05-09 03:47:46.000000 UTC	N/A	Disabled
+596	520	winlogon.exe	0xc80ee5a4a080	5	-	1	False	2026-05-09 03:47:45.000000 UTC	N/A	Disabled
+688	528	lsass.exe	0xc80ee5a64080	8	-	0	False	2026-05-09 03:47:45.000000 UTC	N/A	Disabled
+668	528	services.exe	0xc80ee5a67080	5	-	0	False	2026-05-09 03:47:45.000000 UTC	N/A	Disabled
+528	404	wininit.exe	0xc80ee5de9080	1	-	0	False	2026-05-09 03:47:44.000000 UTC	N/A	Disabled
+536	520	csrss.exe	0xc80ee5dee140	11	-	1	False	2026-05-09 03:47:44.000000 UTC	N/A	Disabled
+812	668	svchost.exe	0xc80ee6465240	13	-	0	False	2026-05-09 03:47:45.000000 UTC	N/A	Disabled
+836	528	fontdrvhost.ex	0xc80ee6496140	5	-	0	False	2026-05-09 03:47:45.000000 UTC	N/A	Disabled
+904	668	WUDFHost.exe	0xc80ee64a5080	6	-	0	False	2026-05-09 03:47:45.000000 UTC	N/A	Disabled
+840	596	fontdrvhost.ex	0xc80ee64a6140	5	-	1	False	2026-05-09 03:47:45.000000 UTC	N/A	Disabled
+968	668	svchost.exe	0xc80ee64e5080	9	-	0	False	2026-05-09 03:47:45.000000 UTC	N/A	Disabled
+4776	668	svchost.exe	0xc80ee6520080	8	-	0	False	2026-05-09 03:47:57.000000 UTC	N/A	Disabled
+6124	812	RuntimeBroker.	0xc80ee65240c0	4	-	1	False	2026-05-09 03:48:02.000000 UTC	N/A	Disabled
+1340	668	svchost.exe	0xc80ee65482c0	12	-	0	False	2026-05-09 03:47:46.000000 UTC	N/A	Disabled
+1376	668	svchost.exe	0xc80ee6564240	4	-	0	False	2026-05-09 03:47:46.000000 UTC	N/A	Disabled
+4216	812	ScreenClipping	0xc80ee656e080	0	-	1	False	2026-05-09 04:07:55.000000 UTC	2026-05-09 04:08:04.000000 UTC	Disabled
+1412	668	svchost.exe	0xc80ee65802c0	16	-	0	False	2026-05-09 03:47:46.000000 UTC	N/A	Disabled
+3376	6124	powershell.exe	0xc80ee65e0080	12	-	1	False	2026-05-09 04:45:38.000000 UTC	N/A	Disabled
+6240	3348	SearchProtocol	0xc80ee6694080	3	-	1	False	2026-05-09 04:48:20.000000 UTC	N/A	Disabled
+404	596	dwm.exe	0xc80ee6696080	15	-	1	False	2026-05-09 03:47:45.000000 UTC	N/A	Disabled
+832	668	svchost.exe	0xc80ee672b240	46	-	0	False	2026-05-09 03:47:45.000000 UTC	N/A	Disabled
+1044	668	svchost.exe	0xc80ee67542c0	11	-	0	False	2026-05-09 03:47:45.000000 UTC	N/A	Disabled
+1092	668	svchost.exe	0xc80ee67610c0	33	-	0	False	2026-05-09 03:47:45.000000 UTC	N/A	Disabled
+1136	668	svchost.exe	0xc80ee679e2c0	14	-	0	False	2026-05-09 03:47:45.000000 UTC	N/A	Disabled
+1208	668	svchost.exe	0xc80ee67d42c0	19	-	0	False	2026-05-09 03:47:46.000000 UTC	N/A	Disabled
+6712	3376	powershell.exe	0xc80ee6810080	9	-	1	False	2026-05-09 04:49:19.000000 UTC	N/A	Disabled
+1756	668	svchost.exe	0xc80ee688b2c0	2	-	0	False	2026-05-09 03:47:46.000000 UTC	N/A	Disabled
+6572	812	WinStore.App.e	0xc80ee69350c0	12	-	1	False	2026-05-09 03:50:25.000000 UTC	N/A	Disabled
+2160	668	spoolsv.exe	0xc80ee699e0c0	7	-	0	False	2026-05-09 03:47:47.000000 UTC	N/A	Disabled
+2184	668	svchost.exe	0xc80ee69a20c0	12	-	0	False	2026-05-09 03:47:47.000000 UTC	N/A	Disabled
+2424	668	svchost.exe	0xc80ee6ab5240	8	-	0	False	2026-05-09 03:47:47.000000 UTC	N/A	Disabled
+2500	668	VGAuthService.	0xc80ee6af1300	2	-	0	False	2026-05-09 03:47:47.000000 UTC	N/A	Disabled
+2508	668	vm3dservice.ex	0xc80ee6af2080	3	-	0	False	2026-05-09 03:47:47.000000 UTC	N/A	Disabled
+5028	668	MpDefenderCore	0xc80ee6bca080	10	-	0	False	2026-05-09 03:58:31.000000 UTC	N/A	Disabled
+800	668	dllhost.exe	0xc80ee6be0280	10	-	0	False	2026-05-09 03:47:49.000000 UTC	N/A	Disabled
+6448	3348	SearchFilterHo	0xc80ee6bf6080	1	-	0	False	2026-05-09 04:48:20.000000 UTC	N/A	Disabled
+2540	668	vmtoolsd.exe	0xc80ee6c71280	11	-	0	False	2026-05-09 03:47:47.000000 UTC	N/A	Disabled
+2660	2508	vm3dservice.ex	0xc80ee6cc3300	4	-	1	False	2026-05-09 03:47:47.000000 UTC	N/A	Disabled
+7164	812	ScreenClipping	0xc80ee6e93080	0	-	1	False	2026-05-09 03:55:10.000000 UTC	2026-05-09 03:55:22.000000 UTC	Disabled
+3244	668	svchost.exe	0xc80ee6ea4080	5	-	0	False	2026-05-09 03:47:50.000000 UTC	N/A	Disabled
+2180	812	dllhost.exe	0xc80ee6ea5080	8	-	1	False	2026-05-09 03:51:42.000000 UTC	N/A	Disabled
+3188	812	WmiPrvSE.exe	0xc80ee6ea9280	13	-	0	False	2026-05-09 03:47:50.000000 UTC	N/A	Disabled
+2940	812	ShellExperienc	0xc80ee6eaa080	18	-	1	False	2026-05-09 03:53:11.000000 UTC	N/A	Disabled
+3348	668	SearchIndexer.	0xc80ee6f5d240	16	-	0	False	2026-05-09 03:47:51.000000 UTC	N/A	Disabled
+2804	3376	powershell.exe	0xc80ee6fb3340	8	-	1	False	2026-05-09 04:49:19.000000 UTC	N/A	Disabled
+572	668	msdtc.exe	0xc80ee708e280	9	-	0	False	2026-05-09 03:47:53.000000 UTC	N/A	Disabled
+6508	6712	conhost.exe	0xc80ee70a6080	3	-	1	False	2026-05-09 04:49:19.000000 UTC	N/A	Disabled
+2200	812	ScreenClipping	0xc80ee70a7080	0	-	1	False	2026-05-09 03:53:12.000000 UTC	2026-05-09 03:53:27.000000 UTC	Disabled
+4248	596	userinit.exe	0xc80ee7148080	0	-	1	False	2026-05-09 03:47:55.000000 UTC	2026-05-09 03:48:20.000000 UTC	Disabled
+6280	812	ScreenClipping	0xc80ee7149080	0	-	1	False	2026-05-09 04:02:51.000000 UTC	2026-05-09 04:02:53.000000 UTC	Disabled
+4292	3376	conhost.exe	0xc80ee7151080	5	-	1	False	2026-05-09 04:45:39.000000 UTC	N/A	Disabled
+4300	4248	explorer.exe	0xc80ee7192340	67	-	1	False	2026-05-09 03:47:55.000000 UTC	N/A	Disabled
+2144	3376	powershell.exe	0xc80ee71942c0	8	-	1	False	2026-05-09 04:47:27.000000 UTC	N/A	Disabled
+3392	3376	powershell.exe	0xc80ee71cb2c0	8	-	1	False	2026-05-09 04:47:27.000000 UTC	N/A	Disabled
+3492	668	svchost.exe	0xc80ee72932c0	18	-	1	False	2026-05-09 03:47:54.000000 UTC	N/A	Disabled
+2432	832	sihost.exe	0xc80ee72a7300	12	-	1	False	2026-05-09 03:47:54.000000 UTC	N/A	Disabled
+4040	4300	FTK Imager.exe	0xc80ee72b62c0	21	-	1	True	2026-05-09 03:55:52.000000 UTC	N/A	Disabled
+2136	812	RuntimeBroker.	0xc80ee72d2080	1	-	1	False	2026-05-09 03:50:26.000000 UTC	N/A	Disabled
+3772	832	taskhostw.exe	0xc80ee7304300	8	-	1	False	2026-05-09 03:47:54.000000 UTC	N/A	Disabled
+2916	812	ApplicationFra	0xc80ee7305080	2	-	1	False	2026-05-09 03:50:25.000000 UTC	N/A	Disabled
+3796	832	MicrosoftEdgeU	0xc80ee7306300	4	-	0	True	2026-05-09 03:47:54.000000 UTC	N/A	Disabled
+4356	3896	conhost.exe	0xc80ee7352080	4	-	1	False	2026-05-09 03:51:43.000000 UTC	N/A	Disabled
+4280	3148	OneDrive.Sync.	0xc80ee7490080	17	-	1	False	2026-05-09 03:55:52.000000 UTC	N/A	Disabled
+4500	668	svchost.exe	0xc80ee74912c0	7	-	1	False	2026-05-09 03:47:56.000000 UTC	N/A	Disabled
+3724	1092	TabTip.exe	0xc80ee74b32c0	0	-	1	False	2026-05-09 04:45:38.000000 UTC	2026-05-09 04:45:39.000000 UTC	Disabled
+3948	668	NisSrv.exe	0xc80ee75e0300	3	-	0	False	2026-05-09 03:58:31.000000 UTC	N/A	Disabled
+1016	4324	conhost.exe	0xc80ee75e3300	3	-	1	False	2026-05-09 04:49:19.000000 UTC	N/A	Disabled
+3828	668	msiexec.exe	0xc80ee7621080	0	-	0	False	2026-05-09 04:45:05.000000 UTC	2026-05-09 04:50:14.000000 UTC	Disabled
+6488	4440	conhost.exe	0xc80ee763a080	3	-	1	False	2026-05-09 04:49:19.000000 UTC	N/A	Disabled
+3620	3376	powershell.exe	0xc80ee763e080	9	-	1	False	2026-05-09 04:49:19.000000 UTC	N/A	Disabled
+3484	6112	conhost.exe	0xc80ee7659080	3	-	1	False	2026-05-09 04:06:42.000000 UTC	N/A	Disabled
+5052	812	StartMenuExper	0xc80ee76890c0	11	-	1	False	2026-05-09 03:47:57.000000 UTC	N/A	Disabled
+5316	668	WUDFHost.exe	0xc80ee7694080	6	-	0	False	2026-05-09 03:59:58.000000 UTC	N/A	Disabled
+992	668	svchost.exe	0xc80ee7788080	8	-	0	False	2026-05-09 03:49:48.000000 UTC	N/A	Disabled
+7080	812	ScreenClipping	0xc80ee778b080	0	-	1	False	2026-05-09 03:54:49.000000 UTC	2026-05-09 03:54:56.000000 UTC	Disabled
+3004	812	dllhost.exe	0xc80ee7793080	4	-	0	False	2026-05-09 03:58:31.000000 UTC	N/A	Disabled
+3212	3376	powershell.exe	0xc80ee77a4080	8	-	1	False	2026-05-09 04:49:19.000000 UTC	N/A	Disabled
+4400	812	ScreenClipping	0xc80ee77d4280	0	-	1	False	2026-05-09 04:03:01.000000 UTC	2026-05-09 04:03:08.000000 UTC	Disabled
+4552	812	RuntimeBroker.	0xc80ee77d52c0	1	-	1	False	2026-05-09 03:47:58.000000 UTC	N/A	Disabled
+5248	812	SearchApp.exe	0xc80ee785b080	47	-	1	False	2026-05-09 03:47:58.000000 UTC	N/A	Disabled
+5344	812	RuntimeBroker.	0xc80ee7860080	9	-	1	False	2026-05-09 03:47:58.000000 UTC	N/A	Disabled
+3036	1100	conhost.exe	0xc80ee7863080	4	-	1	False	2026-05-09 04:47:27.000000 UTC	N/A	Disabled
+4012	3212	conhost.exe	0xc80ee793e080	4	-	1	False	2026-05-09 04:49:19.000000 UTC	N/A	Disabled
+7016	5512	conhost.exe	0xc80ee794e240	3	-	1	False	2026-05-09 04:47:27.000000 UTC	N/A	Disabled
+5708	668	svchost.exe	0xc80ee796b0c0	3	-	1	False	2026-05-09 03:52:55.000000 UTC	N/A	Disabled
+1356	812	ScreenClipping	0xc80ee796d080	0	-	1	False	2026-05-09 03:54:16.000000 UTC	2026-05-09 03:54:27.000000 UTC	Disabled
+60	5896	conhost.exe	0xc80ee7978240	3	-	1	False	2026-05-09 04:47:27.000000 UTC	N/A	Disabled
+7020	668	svchost.exe	0xc80ee79b3080	1	-	0	False	2026-05-09 03:48:11.000000 UTC	N/A	Disabled
+5152	668	svchost.exe	0xc80ee79c4080	4	-	0	False	2026-05-09 03:50:47.000000 UTC	N/A	Disabled
+5860	668	MsMpEng.exe	0xc80ee79cd080	27	-	0	False	2026-05-09 03:58:23.000000 UTC	N/A	Disabled
+1920	2144	conhost.exe	0xc80ee7a4a2c0	3	-	1	False	2026-05-09 04:47:27.000000 UTC	N/A	Disabled
+2292	4300	vmtoolsd.exe	0xc80ee7a54080	5	-	1	False	2026-05-09 03:48:12.000000 UTC	N/A	Disabled
+4440	3376	powershell.exe	0xc80ee7bd2080	11	-	1	False	2026-05-09 04:49:19.000000 UTC	N/A	Disabled
+1680	3620	conhost.exe	0xc80ee7be2080	3	-	1	False	2026-05-09 04:49:19.000000 UTC	N/A	Disabled
+5896	3376	powershell.exe	0xc80ee7c67080	8	-	1	False	2026-05-09 04:47:27.000000 UTC	N/A	Disabled
+1984	812	ScreenClipping	0xc80ee7c76080	0	-	1	False	2026-05-09 03:52:59.000000 UTC	2026-05-09 03:53:11.000000 UTC	Disabled
+5916	812	SkypeApp.exe	0xc80ee7c77340	15	-	1	False	2026-05-09 03:48:01.000000 UTC	N/A	Disabled
+5940	812	SkypeBackgroun	0xc80ee7c8b240	4	-	1	False	2026-05-09 03:48:01.000000 UTC	N/A	Disabled
+6112	4300	cmd.exe	0xc80ee7ce2080	3	-	1	False	2026-05-09 04:06:42.000000 UTC	N/A	Disabled
+1220	3392	conhost.exe	0xc80ee7ce42c0	3	-	1	False	2026-05-09 04:47:27.000000 UTC	N/A	Disabled
+3896	4300	cmd.exe	0xc80ee7cf0080	1	-	1	False	2026-05-09 03:51:43.000000 UTC	N/A	Disabled
+5972	1092	ctfmon.exe	0xc80ee7d6c0c0	11	-	1	False	2026-05-09 03:48:01.000000 UTC	N/A	Disabled
+5992	1092	TabTip.exe	0xc80ee7d7e080	9	-	1	False	2026-05-09 03:48:01.000000 UTC	N/A	Disabled
+4480	812	RuntimeBroker.	0xc80ee7d9e0c0	6	-	1	False	2026-05-09 03:53:11.000000 UTC	N/A	Disabled
+5652	812	TextInputHost.	0xc80ee7da1080	10	-	1	False	2026-05-09 03:48:03.000000 UTC	N/A	Disabled
+6756	812	ScreenClipping	0xc80ee7db8340	0	-	1	False	2026-05-09 03:53:39.000000 UTC	2026-05-09 03:53:49.000000 UTC	Disabled
+7144	812	RuntimeBroker.	0xc80ee7f33080	4	-	1	False	2026-05-09 03:48:11.000000 UTC	N/A	Disabled
+4024	812	ScreenClipping	0xc80ee7f68340	0	-	1	False	2026-05-09 04:07:41.000000 UTC	2026-05-09 04:07:51.000000 UTC	Disabled
+1100	3376	powershell.exe	0xc80ee7fd9340	8	-	1	False	2026-05-09 04:47:27.000000 UTC	N/A	Disabled
+3880	832	MicrosoftEdgeU	0xc80ee800b080	3	-	0	True	2026-05-09 04:51:58.000000 UTC	N/A	Disabled
+6452	668	SgrmBroker.exe	0xc80ee800d080	7	-	0	False	2026-05-09 03:49:48.000000 UTC	N/A	Disabled
+4324	3376	cmd.exe	0xc80ee8031080	1	-	1	False	2026-05-09 04:49:19.000000 UTC	N/A	Disabled
+6368	4324	PING.EXE	0xc80ee803b340	3	-	1	False	2026-05-09 04:49:20.000000 UTC	N/A	Disabled
+3872	668	SecurityHealth	0xc80ee8043080	6	-	0	False	2026-05-09 03:50:01.000000 UTC	N/A	Disabled
+6308	3376	cmd.exe	0xc80ee8074080	0	-	1	False	2026-05-09 04:47:27.000000 UTC	2026-05-09 04:47:43.000000 UTC	Disabled
+5512	3376	powershell.exe	0xc80ee8210240	8	-	1	False	2026-05-09 04:47:27.000000 UTC	N/A	Disabled
+1108	812	ScreenClipping	0xc80ee821a080	0	-	1	False	2026-05-09 04:11:20.000000 UTC	2026-05-09 04:11:29.000000 UTC	Disabled
+5872	2804	conhost.exe	0xc80ee9b350c0	3	-	1	False	2026-05-09 04:49:19.000000 UTC	N/A	Disabled</pre>
+<h2>Network Connections</h2><pre>Volatility 3 Framework 2.28.1
+
+Offset	Proto	LocalAddr	LocalPort	ForeignAddr	ForeignPort	State	PID	Owner	Created
+
+0xc80ee1e883d0	TCPv4	192.168.221.132	49931	4.199.115.139	443	CLOSED	5248	SearchApp.exe	2026-05-09 04:45:40.000000 UTC
+0xc80ee1e8e050	TCPv4	0.0.0.0	445	0.0.0.0	0	LISTENING	4	System	2026-05-09 03:47:48.000000 UTC
+0xc80ee1e8e050	TCPv6	::	445	::	0	LISTENING	4	System	2026-05-09 03:47:48.000000 UTC
+0xc80ee1e8ee10	TCPv6	::1	42050	::	0	LISTENING	4280	OneDrive.Sync.	2026-05-09 03:55:55.000000 UTC
+0xc80ee24cd050	TCPv4	0.0.0.0	49664	0.0.0.0	0	LISTENING	688	lsass.exe	2026-05-09 03:47:45.000000 UTC
+0xc80ee52fd050	TCPv4	0.0.0.0	49665	0.0.0.0	0	LISTENING	528	wininit.exe	2026-05-09 03:47:45.000000 UTC
+0xc80ee52fd050	TCPv6	::	49665	::	0	LISTENING	528	wininit.exe	2026-05-09 03:47:45.000000 UTC
+0xc80ee52fd890	TCPv4	0.0.0.0	49664	0.0.0.0	0	LISTENING	688	lsass.exe	2026-05-09 03:47:45.000000 UTC
+0xc80ee52fd890	TCPv6	::	49664	::	0	LISTENING	688	lsass.exe	2026-05-09 03:47:45.000000 UTC
+0xc80ee52fd9f0	TCPv4	0.0.0.0	49666	0.0.0.0	0	LISTENING	1044	svchost.exe	2026-05-09 03:47:46.000000 UTC
+0xc80ee52fe4f0	TCPv4	0.0.0.0	135	0.0.0.0	0	LISTENING	968	svchost.exe	2026-05-09 03:47:45.000000 UTC
+0xc80ee52fe650	TCPv4	0.0.0.0	49665	0.0.0.0	0	LISTENING	528	wininit.exe	2026-05-09 03:47:45.000000 UTC
+0xc80ee52fea70	TCPv4	0.0.0.0	49666	0.0.0.0	0	LISTENING	1044	svchost.exe	2026-05-09 03:47:46.000000 UTC
+0xc80ee52fea70	TCPv6	::	49666	::	0	LISTENING	1044	svchost.exe	2026-05-09 03:47:46.000000 UTC
+0xc80ee52fee90	TCPv4	0.0.0.0	135	0.0.0.0	0	LISTENING	968	svchost.exe	2026-05-09 03:47:45.000000 UTC
+0xc80ee52fee90	TCPv6	::	135	::	0	LISTENING	968	svchost.exe	2026-05-09 03:47:45.000000 UTC
+0xc80ee5aeb4a0	TCPv4	192.168.221.132	49871	13.107.213.254	443	CLOSE_WAIT	5248	SearchApp.exe	2026-05-09 04:02:56.000000 UTC
+0xc80ee65ec4d0	TCPv4	192.168.221.132	49930	52.113.196.254	443	CLOSED	5248	SearchApp.exe	2026-05-09 04:45:40.000000 UTC
+0xc80ee65f0890	TCPv4	0.0.0.0	5040	0.0.0.0	0	LISTENING	1208	svchost.exe	2026-05-09 03:47:56.000000 UTC
+0xc80ee65f0e10	TCPv4	0.0.0.0	49668	0.0.0.0	0	LISTENING	2160	spoolsv.exe	2026-05-09 03:47:47.000000 UTC
+0xc80ee65f10d0	TCPv4	0.0.0.0	49668	0.0.0.0	0	LISTENING	2160	spoolsv.exe	2026-05-09 03:47:47.000000 UTC
+0xc80ee65f10d0	TCPv6	::	49668	::	0	LISTENING	2160	spoolsv.exe	2026-05-09 03:47:47.000000 UTC
+0xc80ee65f1390	TCPv4	0.0.0.0	49669	0.0.0.0	0	LISTENING	668	services.exe	2026-05-09 03:47:48.000000 UTC
+0xc80ee65f1390	TCPv6	::	49669	::	0	LISTENING	668	services.exe	2026-05-09 03:47:48.000000 UTC
+0xc80ee65f14f0	TCPv4	0.0.0.0	49667	0.0.0.0	0	LISTENING	832	svchost.exe	2026-05-09 03:47:46.000000 UTC
+0xc80ee65f1650	TCPv4	192.168.221.132	139	0.0.0.0	0	LISTENING	4	System	2026-05-09 03:47:48.000000 UTC
+0xc80ee65f1910	TCPv4	0.0.0.0	49667	0.0.0.0	0	LISTENING	832	svchost.exe	2026-05-09 03:47:46.000000 UTC
+0xc80ee65f1910	TCPv6	::	49667	::	0	LISTENING	832	svchost.exe	2026-05-09 03:47:46.000000 UTC
+0xc80ee65f1a70	TCPv4	0.0.0.0	49669	0.0.0.0	0	LISTENING	668	services.exe	2026-05-09 03:47:48.000000 UTC
+0xc80ee65f1e90	TCPv4	0.0.0.0	7680	0.0.0.0	0	LISTENING	4776	svchost.exe	2026-05-09 03:47:57.000000 UTC
+0xc80ee65f1e90	TCPv6	::	7680	::	0	LISTENING	4776	svchost.exe	2026-05-09 03:47:57.000000 UTC
+0xc80ee68171e0	TCPv4	192.168.221.132	49929	13.107.4.254	443	CLOSED	5248	SearchApp.exe	2026-05-09 04:45:39.000000 UTC
+0xc80ee6828b80	UDPv4	0.0.0.0	5355	*	0		1412	svchost.exe	2026-05-09 04:47:48.000000 UTC
+0xc80ee6828b80	UDPv6	::	5355	*	0		1412	svchost.exe	2026-05-09 04:47:48.000000 UTC
+0xc80ee682ac50	UDPv4	0.0.0.0	5355	*	0		1412	svchost.exe	2026-05-09 04:47:48.000000 UTC
+0xc80ee6d80590	UDPv4	192.168.221.132	137	*	0		4	System	2026-05-09 03:47:48.000000 UTC
+0xc80ee6d80d60	UDPv4	0.0.0.0	5353	*	0		1412	svchost.exe	2026-05-09 03:47:48.000000 UTC
+0xc80ee6d81850	UDPv4	0.0.0.0	0	*	0		1412	svchost.exe	2026-05-09 03:47:48.000000 UTC
+0xc80ee6d81850	UDPv6	::	0	*	0		1412	svchost.exe	2026-05-09 03:47:48.000000 UTC
+0xc80ee6d82e30	UDPv4	0.0.0.0	5353	*	0		1412	svchost.exe	2026-05-09 03:47:48.000000 UTC
+0xc80ee6d82e30	UDPv6	::	5353	*	0		1412	svchost.exe	2026-05-09 03:47:48.000000 UTC
+0xc80ee6d83150	UDPv4	192.168.221.132	138	*	0		4	System	2026-05-09 03:47:48.000000 UTC
+0xc80ee6d86030	UDPv4	127.0.0.1	60671	*	0		832	svchost.exe	2026-05-09 03:47:48.000000 UTC
+0xc80ee70a8010	TCPv4	192.168.221.132	49935	104.20.23.154	80	CLOSED	-	-	2026-05-09 04:49:25.000000 UTC
+0xc80ee715e020	UDPv4	0.0.0.0	5050	*	0		1208	svchost.exe	2026-05-09 03:47:55.000000 UTC
+0xc80ee72c9a20	TCPv4	192.168.221.132	49689	172.172.255.216	443	ESTABLISHED	832	svchost.exe	2026-05-09 03:47:57.000000 UTC
+0xc80ee78992b0	TCPv4	192.168.221.132	49934	68.218.189.9	443	CLOSED	5860	MsMpEng.exe	2026-05-09 04:49:20.000000 UTC
+0xc80ee794aa20	TCPv4	192.168.221.132	49775	172.172.255.217	443	ESTABLISHED	832	svchost.exe	2026-05-09 03:48:56.000000 UTC
+0xc80ee7c4db40	TCPv4	192.168.221.132	49928	204.79.197.222	443	CLOSED	5248	SearchApp.exe	2026-05-09 04:45:37.000000 UTC
+0xc80ee7ca23b0	UDPv4	0.0.0.0	5355	*	0		1412	svchost.exe	2026-05-09 04:02:48.000000 UTC
+0xc80ee7ca23b0	UDPv6	::	5355	*	0		1412	svchost.exe	2026-05-09 04:02:48.000000 UTC
+0xc80ee7ca2540	UDPv4	0.0.0.0	5355	*	0		1412	svchost.exe	2026-05-09 04:02:48.000000 UTC
+0xc80ee7daf050	TCPv4	192.168.221.132	49927	184.84.238.131	443	CLOSE_WAIT	5248	SearchApp.exe	2026-05-09 04:45:34.000000 UTC
+0xc80ee7dd2a20	TCPv4	192.168.221.132	49936	68.218.189.9	443	CLOSED	5860	MsMpEng.exe	2026-05-09 04:49:25.000000 UTC
+0xc80ee8030b20	TCPv4	192.168.221.132	49873	13.107.226.254	443	CLOSE_WAIT	5248	SearchApp.exe	2026-05-09 04:02:56.000000 UTC
+0xc80ee810d840	UDPv6	fe80::61ee:f23c:346b:5842	50975	*	0		1340	svchost.exe	2026-05-09 03:48:09.000000 UTC
+0xc80ee810ec90	UDPv4	127.0.0.1	50978	*	0		1340	svchost.exe	2026-05-09 03:48:09.000000 UTC
+0xc80ee810ee20	UDPv6	fe80::61ee:f23c:346b:5842	1900	*	0		1340	svchost.exe	2026-05-09 03:48:09.000000 UTC
+0xc80ee810f780	UDPv6	::1	50976	*	0		1340	svchost.exe	2026-05-09 03:48:09.000000 UTC
+0xc80ee810faa0	UDPv4	192.168.221.132	50977	*	0		1340	svchost.exe	2026-05-09 03:48:09.000000 UTC
+0xc80ee8113790	UDPv6	::1	1900	*	0		1340	svchost.exe	2026-05-09 03:48:09.000000 UTC
+0xc80ee8113920	UDPv4	192.168.221.132	1900	*	0		1340	svchost.exe	2026-05-09 03:48:09.000000 UTC
+0xc80ee8116350	UDPv4	127.0.0.1	1900	*	0		1340	svchost.exe	2026-05-09 03:48:09.000000 UTC</pre>
+<h2>Process Command Lines</h2><pre>Volatility 3 Framework 2.28.1
+
+PID	Process	Args
+
+4	System	-
+92	Registry	-
+308	smss.exe	-
+412	csrss.exe	-
+528	wininit.exe	-
+536	csrss.exe	-
+596	winlogon.exe	-
+668	services.exe	C:\Windows\system32\services.exe
+688	lsass.exe	C:\Windows\system32\lsass.exe
+812	svchost.exe	-
+836	fontdrvhost.ex	-
+840	fontdrvhost.ex	-
+904	WUDFHost.exe	-
+968	svchost.exe	C:\Windows\system32\svchost.exe -k RPCSS -p
+404	dwm.exe	-
+832	svchost.exe	C:\Windows\system32\svchost.exe -k netsvcs -p
+1044	svchost.exe	C:\Windows\System32\svchost.exe -k LocalServiceNetworkRestricted -p
+1092	svchost.exe	-
+1136	svchost.exe	C:\Windows\system32\svchost.exe -k LocalServiceNoNetwork -p
+1208	svchost.exe	C:\Windows\system32\svchost.exe -k LocalService -p
+1340	svchost.exe	-
+1376	svchost.exe	-
+1412	svchost.exe	C:\Windows\System32\svchost.exe -k NetworkService -p
+1740	MemCompression	-
+1756	svchost.exe	-
+1956	svchost.exe	C:\Windows\System32\svchost.exe -k LocalServiceNetworkRestricted -p
+1268	svchost.exe	-
+1684	svchost.exe	-
+2160	spoolsv.exe	-
+2184	svchost.exe	-
+2424	svchost.exe	-
+2500	VGAuthService.	-
+2508	vm3dservice.ex	-
+2540	vmtoolsd.exe	"C:\Program Files\VMware\VMware Tools\vmtoolsd.exe"
+2660	vm3dservice.ex	-
+800	dllhost.exe	-
+3188	WmiPrvSE.exe	-
+3244	svchost.exe	-
+3348	SearchIndexer.	C:\Windows\system32\SearchIndexer.exe /Embedding
+572	msdtc.exe	-
+2432	sihost.exe	sihost.exe
+3492	svchost.exe	-
+3772	taskhostw.exe	-
+3796	MicrosoftEdgeU	-
+4248	userinit.exe	-
+4300	explorer.exe	C:\Windows\Explorer.EXE
+4500	svchost.exe	C:\Windows\system32\svchost.exe -k ClipboardSvcGroup -p
+4776	svchost.exe	C:\Windows\System32\svchost.exe -k NetworkService -p
+5052	StartMenuExper	-
+4552	RuntimeBroker.	-
+5248	SearchApp.exe	-
+5344	RuntimeBroker.	-
+5916	SkypeApp.exe	-
+5940	SkypeBackgroun	-
+5972	ctfmon.exe	-
+5992	TabTip.exe	-
+6124	RuntimeBroker.	-
+5652	TextInputHost.	-
+7020	svchost.exe	-
+7144	RuntimeBroker.	-
+2292	vmtoolsd.exe	"C:\Program Files\VMware\VMware Tools\vmtoolsd.exe" -n vmusr
+6452	SgrmBroker.exe	-
+992	svchost.exe	-
+3872	SecurityHealth	-
+2916	ApplicationFra	-
+6572	WinStore.App.e	-
+2136	RuntimeBroker.	-
+5152	svchost.exe	-
+2180	dllhost.exe	-
+3896	cmd.exe	-
+4356	conhost.exe	-
+5708	svchost.exe	-
+1984	ScreenClipping	-
+2940	ShellExperienc	-
+4480	RuntimeBroker.	-
+2200	ScreenClipping	-
+6756	ScreenClipping	-
+1356	ScreenClipping	-
+7080	ScreenClipping	-
+7164	ScreenClipping	-
+4280	OneDrive.Sync.	-
+4040	FTK Imager.exe	-
+5860	MsMpEng.exe	䰄ūԈ卖餃쀍ᅊ罠Pი侅༄힅h譍磎 ⳑ힋䴹婄尮㝈䱰䡘璋怤ୠꀣ䱰䈰쌠䳌㶉쑓ഀꣴ栋ꔀ䯺　⸀£㒟䠁䂸㎻Ｓ圏諀䔿勰ࡕǷȀ؀ή㴹θ댑ѐ㎐㤃ꔽ醲�ÐǡＳﾅ蔏ᇌ뀆朴
+5028	MpDefenderCore	-
+3948	NisSrv.exe	-
+3004	dllhost.exe	-
+5316	WUDFHost.exe	-
+6280	ScreenClipping	-
+4400	ScreenClipping	-
+6112	cmd.exe	-
+3484	conhost.exe	-
+4024	ScreenClipping	-
+4216	ScreenClipping	-
+1108	ScreenClipping	-
+3724	TabTip.exe	-
+3376	powershell.exe	"C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" 
+4292	conhost.exe	-
+6308	cmd.exe	-
+1100	powershell.exe	-
+3392	powershell.exe	-
+1220	conhost.exe	-
+2144	powershell.exe	"C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -WindowStyle Hidden -c Start-Sleep 600 
+1920	conhost.exe	-
+3036	conhost.exe	-
+5896	powershell.exe	-
+60	conhost.exe	-
+5512	powershell.exe	-
+7016	conhost.exe	-
+4324	cmd.exe	-
+3212	powershell.exe	"C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -WindowStyle Hidden -c Start-Sleep 600 
+2804	powershell.exe	-
+1016	conhost.exe	-
+5872	conhost.exe	-
+6712	powershell.exe	"C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -WindowStyle Hidden -c Start-Sleep 600 
+6508	conhost.exe	-
+4012	conhost.exe	-
+3620	powershell.exe	"C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -WindowStyle Hidden -c Start-Sleep 600 
+1680	conhost.exe	-
+4440	powershell.exe	"C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -WindowStyle Hidden -c Start-Sleep 600 
+6488	conhost.exe	-
+6368	PING.EXE	ping  -t 8.8.8.8</pre>
+<h2>Injected Code Detection</h2><pre>[TIMEOUT] Plugin malfind took too long to execute</pre>
+</body></html>
