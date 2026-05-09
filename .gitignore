@@ -1,2 +1,3 @@
 *.vmem
 volatility3/
+*.mem
